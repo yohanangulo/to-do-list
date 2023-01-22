@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+
+    <link rel="shortcut icon" href="img/to-do-list.png" type="image/x-icon">
+
+    <!-- tailwindcss -->
+
+    <link rel="stylesheet" href="dist/main.css" />
+
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <!-- main section -->
+    <section class="min-h-screen bg-darkGrey">
+      <div class="container px-4 m-auto">
+        <!-- header -->
+        <header class="py-7 pb-10">
+          <h1 class="text-2xl font-bold text-gray-200">To-Do List</h1>
+
+          <!-- form -->
+          <form name="form" class="flex items-center justify-center gap-5 pt-5 pb-4">
+            <input
+              type="text"
+              id="new-task-input"
+              placeholder="Add a new task"
+              autocomplete="off"
+              class="flex-1 bg-lighGrey py-2 md:py-3 px-5 rounded-full max-w-[600px] shadow-md focus:outline"
+            />
+            <button
+              class="font-bold text-magenta pr-1"
+            >
+              Add Task
+            </button>
+          </form>
+        </header>
+
+        <main>
+          <section>
+          <h2 class="text-lg font-semibold">Tasks list</h2>
+            
+            <!-- task list -->
+            <div id="tasks" class="pt-5 flex flex-col-reverse">
+              
+              <h2 class="text-center text-magenta text-3xl opacity-40">You don't have any task yet!</h2>
+
+
+
+            </div>
+          </section>
+        </main>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+  </body>
+</html>
